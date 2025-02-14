@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+</head>
+<body>
+    <div class="registrationForm">
+        <h1>Registration Form</h1>
+        <form id="registrationForm" action="index.html" method="post">
+            <label>Name: <input type="text" id="name" required></label><br><br>
+            <label>Email: <input type="email" id="email" required></label><br><br>
+            <label>Password: <input type="password" id="password" required></label><br><br>
+
+            <label>Gender: 
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </label><br><br>
+
+            <label>Hobbies:<br>
+                <input type="checkbox" name="hobbies" value="Reading"> Reading<br>
+                <input type="checkbox" name="hobbies" value="Travelling"> Travelling<br>
+                <input type="checkbox" name="hobbies" value="Cooking"> Cooking<br>
+                <input type="checkbox" name="hobbies" value="Sports"> Sports<br>
+            </label><br>
+
+            <label>City:
+                <select id="city" required>
+                    <option value="">Select your city</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Kolkata">Kolkata</option>
+                </select>
+            </label><br><br>
+
+            <label>Date of Birth: <input type="date" id="date" required></label><br><br>
+            <label>Phone Number: <input type="number" id="phone_number" placeholder="10 digit number" required></label><br><br>
+            <label>Address:<br>
+                <textarea rows="4" cols="50" id="address" placeholder="Enter Your Address" required></textarea>
+            </label><br><br>
+
+            <button type="submit" id="button1">Submit</button>
+        </form>
+
+        <script>
+            document.getElementById("registrationForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                window.location.href = "index.html";  
+            });
+        </script>
+    </div>
+</body>
+</html>
