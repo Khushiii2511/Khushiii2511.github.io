@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #11225c;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .button {
+            background-color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 15px 0px 15px 0px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            border-radius: 0px 15px 0px 15px;
+            background-color: #ddd;
+        }
+        .search-bar {
+            width: 400px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+            outline: none;
+        }
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: lightgray;
+            transition: border 0.3s ease;
+            border: 3px solid transparent;
+        }
+        .icon:hover {
+            border: 5px dashed orange; 
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <button class="button">Home</button>
+        <button class="button">About</button>
+        <button class="button">Help</button>
+        <input type="text" class="search-bar" placeholder="✨Search here ...🔍">
+        <div class="icon"></div>
+    </div>
+</body>
+</html>
